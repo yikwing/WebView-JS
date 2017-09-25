@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>测试</title>
+    <script>
+    function clickq(){
+    <!--获取输入框的值-->
+        var cc = document.getElementById("content").value;
+            <!--调用公开的方法-->
+            myJs.MyToast(cc);
+    }
+
+    function showInfoFromJava(msg){
+        alert("来自客户端的信息："+msg);
+    }
+
+    </script>
+</head>
+<body>
+<input value="点击输入" id="content"/>
+<input type="button" value="按钮" onclick="clickq()" id="button"/>
+
+</body>
+</html>
